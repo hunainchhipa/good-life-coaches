@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Life Coaches</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header position-relative">
+        <nav class="contaner-fluid navbar navbar-expand-lg navbar-light nav-1">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <!-- Button trigger Login modal -->
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" data-bs-toggle="modal" data-bs-target="#loginModal"
+                                aria-current="page" href="#">LOGIN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="#">CART (1)</a>
+                        </li>
+
+                        <!-- Login Modal -->
+                        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp">
+                                                <div id="emailHelp" class="form-text">We'll never share your email with
+                                                    anyone else.</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4 container-fluid nav-2">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/Logo.png" alt="Navbar Logo" class="navlogo position-absolute">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+                        <li class="nav-item tommy">
+                            <a class="nav-link active" aria-current="page" href="#"><span>tommy</span>moseley</a>
+                        </li>
+                        <li class="nav-item  nav-list">
+                            <a class="nav-link active" aria-current="page" href="/">LIFE COACHING</a>
+                        </li>
+                        <li class="nav-item nav-list">
+                            <a class="nav-link active" aria-current="page" href="/life-coaching-certification.html">LIFE
+                                COACH CERTIFICATION</a>
+                        </li>
+                        <li class="nav-item  nav-list">
+                            <a class="nav-link active" aria-current="page" href="/store.html">STORE</a>
+                        </li>
+                        <li class="nav-item  nav-list">
+                            <a class="nav-link active" aria-current="page" href="/blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item  nav-list">
+                            <a class="nav-link active" aria-current="page" href="/contact.html">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="banner position-relative">
+        <img src="images/store bg.png" alt="Banner bg img" class="w-100">
+        <div class="container ">
+            <h1 class="position-absolute top-50 start-50 translate-middle text-white">STORE</h1>
+        </div>
+    </div>
+
+    <div class="register">
+        <div class="wrapper register-content">
+            <div class="signup-text">
+                <h2>Sign up for Complimentary Goodlife Session Today!</h2>
+            </div>
+            <div class="signup-btn">
+                <!-- Button trigger modal -->
+                <div type="button" class="btn btn-warning contact-btn text-white" data-bs-toggle="modal"
+                    data-bs-target="#sessionModal">
+                    SCHEDULE YOUR CALL
+                </div>
+
+                <!-- Session Modal -->
+                <div class="modal fade" id="sessionModal" tabindex="-1" aria-labelledby="sessionModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="sessionModalLabel">Schedule Your Call</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputName" class="form-label">First Name</label>
+                                        <input type="name" class="form-control" id="exampleInputName">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputName" class="form-label">Last Name</label>
+                                        <input type="name" class="form-control" id="exampleInputName">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone
+                                            else.</div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shop-items">
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-sm-6">
+                    <div class="item-description">
+                        <h2>Aloha System</h2>
+                        <p>The Aloha System is a three week online personal coaching experience designed to re-program
+                            your
+                            life for increased happiness. During this class, you will learn:</p>
+                        <ul>
+                            <li>There are leverage points to increase happiness</li>
+                            <li>You CAN increase and grow your enjoyment of this life experience</li>
+                            <li>How to BLOCK bad news</li>
+                            <li>Eliminate bad fears</li>
+                            <li>Learn to use fear as a tool</li>
+                            <li>How to create a system that makes life better</li>
+                            <li>Get clear reviews of what works in the world of positive psychology, and what’s just a
+                                H.A.M. sandwich (Hot Air Motivation)</li>
+                            <li>How to optimize your fitness and nutrition beyond all the clutter you hear in today’s
+                                world
+                            </li>
+                            <li>How to enjoy financial freedom</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-sm-6">
+                    <div class="order text-end">
+                        <div class="btn btn-primary order-btn">ORDER NOW</div>
+                        <div class="price-tag">Price <span>$997</span></div>
+                    </div>
+                    <div class="item1">
+                        <img src="images/item1.png" alt="Item 1 img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item-background">
+        <div class="shop-items">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-sm-6">
+                        <div class="item-description">
+                            <h2>Executive Corporate Performance Coaching Sales</h2>
+                            <p>A whole organizational experience lasting 2 full days that will shift your companies
+                                culture and redirect your team.</p>
+                            <ul>
+                                <li>Teach how Everyone is the face of the company</li>
+                                <li>Empower employees to take ownership</li>
+                                <li>Create systems for every team member to be heard</li>
+                                <li>Create a blueprint that will “unite the tribe”</li>
+                                <li>Increase sales by a minimum of 10% using a 20 year tried and true method of growth
+                                </li>
+                                <li>Educate our sales and business development team</li>
+                                <li>Motivate the entire organization to be the best they can be</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-sm-6">
+                        <div class="order text-end">
+                            <div class="btn btn-primary order-btn">CLICK HERE TO APPLY</div>
+                            <div class="price-tag">Price <span>$2,497</span></div>
+                        </div>
+                        <div class="item1">
+                            <img src="images/item2.png" alt="Item 2 img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shop-items">
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-sm-6">
+                    <div class="item-description">
+                        <h2>Individual Life Coaching</h2>
+                        <p>Individual Life Coaching is a one on one with me personally. A full 12 weeks to inspire and
+                            ensure lasting change. Add your name to the list of people I have helped to reshape their
+                            destiny!</p>
+                        <p>*This is NOT for everyone. Due to time constraints, only applicants that are 100% committed
+                            to change will be considered.</p>
+                        <ul>
+                            <li>Exhaustive goal setting workshop</li>
+                            <li>Physical assessment and plan of action</li>
+                            <li>Financial fitness blueprint</li>
+                            <li>Create a lifestyle blueprint to increase happiness</li>
+                            <li>Discover your strengths</li>
+                            <li>Design your destiny!</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-sm-6">
+                    <div class="order text-end">
+                        <div class="btn btn-primary order-btn">CLICK HERE TO APPLY</div>
+                        <div class="price-tag">Price <span>$12,000</span></div>
+                    </div>
+                    <div class="item1">
+                        <img src="images/item3.png" alt="Item 3 img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="item-background">
+        <div class="shop-items">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-sm-6">
+                        <div class="item-description">
+                            <h2>Aloha From Nebraska</h2>
+                            <p>Aloha from Nebraska is not only a “how to” for increased happiness in your life, but the
+                                story of how Tommy Moseley went from career criminal to teaching and mastering
+                                happiness.</p>
+                            <p>Both a practical guide and a resource tool to teach you to enjoy every single moment of
+                                your life.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-sm-6">
+                        <div class="order-item">
+                            <div class="item1">
+                                <img src="images/item4.png" alt="Item 4 img">
+                            </div>
+                            <div class="order nebraska pt-3">
+                                <div class="btn btn-primary order-btn">ORDER NOW</div>
+                                <div class="price-tag text-end">Price <span>$14.95</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="shop-items">
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-sm-6">
+                    <div class="item-description">
+                        <h2>Aloha From Nebraska - Digital Download</h2>
+                        <p>Aloha from Nebraska is not only a “how to” for increased happiness in your life, but the
+                            story of how Tommy Moseley went from career criminal to teaching and mastering
+                            happiness.</p>
+                        <p>Both a practical guide and a resource tool to teach you to enjoy every single moment of
+                            your life.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-sm-6">
+                    <div class="order-item">
+                        <div class="item1">
+                            <img src="images/item4.png" alt="Item 4 img">
+                        </div>
+                        <div class="order nebraska pt-3">
+                            <div class="btn btn-primary order-btn">BUY NOW</div>
+                            <div class="price-tag text-end">Price <span>$5.95</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <hr class="line">
+
+    <footer>
+        <div class="wrapper ">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/Logo.png" alt="">
+                </div>
+                <div class="link-list">
+                    <ul class="p-0">
+                        <h3>QUICKLINKS</h3>
+                        <li> <i class="fa-solid fa-chevron-right"></i> Home</li>
+                        <li> <i class="fa-solid fa-chevron-right"></i> Life Coaching</li>
+                        <li> <i class="fa-solid fa-chevron-right"></i> Executive Coaching</li>
+                        <li> <i class="fa-solid fa-chevron-right"></i> Shop</li>
+                        <li> <i class="fa-solid fa-chevron-right"></i> Blog</li>
+                        <li> <i class="fa-solid fa-chevron-right"></i> Testimonials</li>
+                        <li> <i class="fa-solid fa-chevron-right"></i> Contact</li>
+                    </ul>
+                </div>
+                <div class="blog-list">
+                    <h3>RECENT BLOG</h3>
+                    <div class="row pb-2">
+                        <div class="col-4">
+                            <img src="images/footer1.png" alt="">
+                        </div>
+                        <div class="col-8">
+                            <p><i class="fa-regular fa-calendar text-warning"></i> 12 Nov, 2018</p>
+                            <p>Don't watch this your prone to getting triggered - just go.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="images/footer2.png" alt="">
+                        </div>
+                        <div class="col-8">
+                            <p><i class="fa-regular fa-calendar text-warning"></i> 12 Nov, 2018</p>
+                            <p>Don't watch this your prone to getting triggered - just go.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="social-media">
+                <p> © 2019. Goodlife Coaches. All Rights Reserved.</p>
+                <div class="social-links">
+                    <img src="images/facebook.png" alt="facebook">
+                    <img src="images/twitter.png" alt="twitter">
+                    <img src="images/youtube.png" alt="youtube">
+                    <img src="images/linkdin.png" alt="linkdin">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-banner py-4"></div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

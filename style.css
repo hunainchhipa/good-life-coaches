@@ -1,0 +1,1117 @@
+@import url("https://fonts.googleapis.com/css2?family=Lugrasimo&family=Lumanosimo&family=Oswald:wght@300&family=Poppins:wght@200;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Lugrasimo&family=Lumanosimo&family=Oswald:wght@300&family=Poppins:wght@200;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Lugrasimo&family=Lumanosimo&family=Oswald:wght@300;500&family=Poppins:wght@200;600&display=swap");
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-SemiBold.woff2") format("woff2"),
+    url("fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Light.woff2") format("woff2"),
+    url("fonts/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat";
+  font-size: 13px;
+  color: #333;
+  margin: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  color: #f58020;
+}
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+input,
+select,
+textarea {
+  font-family: "Montserrat";
+  font-size: 13px;
+  color: #000;
+}
+iframe {
+  max-width: 100%;
+  border: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clr,
+.cl,
+.clear {
+  clear: both;
+}
+input,
+select,
+textarea,
+button {
+  font-family: "Montserrat";
+  font-size: 13px;
+  color: #333;
+}
+.clearfix:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  content: "";
+}
+
+textarea {
+  resize: none;
+  min-height: 82px;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+textarea:focus,
+select:focus {
+  border-color: #4fbc66;
+  box-shadow: 0 0 5px #4fbc66;
+}
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  border: 1px solid #dddddd;
+  background: #fff;
+  padding: 0 13px;
+  box-shadow: none;
+  height: 49px;
+  max-width: 100%;
+  border-radius: 0px;
+  width: 100%;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+}
+textarea {
+  line-height: normal;
+  padding: 9px;
+  width: 100%;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus {
+  border-color: #4fbd66;
+  background: #f9f9f9;
+  box-shadow: 0 0 4px rgb(79, 189, 102);
+}
+select {
+  border: 1px solid #dddddd;
+  background: #fff;
+  max-width: 100%;
+  border-radius: 3px;
+  padding: 15px 13px;
+}
+input[type="image"],
+input[type="submit"],
+input[type="button"],
+button {
+  background: #f1592a;
+  border: medium none;
+  border-radius: 0px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  padding: 0px 23px;
+  text-transform: uppercase;
+  height: 40px;
+  transition: all 0.3s ease-in-out 0s;
+  font-weight: bold;
+  appearance: normal;
+  -webkit-appearance: none;
+  max-width: 100%;
+}
+input[type="image"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover {
+  background-color: #555;
+}
+input[type="image"]:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+button:active {
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2);
+}
+/* ////////////////////////////////////////////////////////////////////////// */
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 50px;
+  max-width: 1200px; /*1200px*/
+}
+.contact-btn {
+  background-color: #ec963c !important;
+  font-size: 15px;
+  padding: 10px 25px;
+  border-radius: 0px !important;
+}
+.header .nav-1 {
+  background-color: #263c88;
+}
+.header .nav-2 .nav-list a {
+  position: relative;
+}
+.header .nav-2 .nav-list a:hover {
+  color: #ec963c;
+}
+.header .nav-2 .nav-list a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: #ec963c;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+.header .nav-2 .nav-list a:hover::after {
+  transform: scaleX(1);
+}
+.header .navlogo {
+  top: -40px;
+  z-index: 1;
+  max-width: 200px;
+}
+.header .tommy {
+  font-size: 30px;
+  letter-spacing: 8px;
+  font-weight: bold;
+}
+.header .tommy span {
+  color: #e19a00;
+}
+.header .nav-list {
+  letter-spacing: 1px;
+  padding-left: 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.banner h1 {
+  font-size: 60px;
+  line-height: 90px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+}
+.banner .certification-heading h1 {
+  font-size: 45px;
+}
+
+.register {
+  padding: 30px 0;
+  margin-bottom: 50px;
+  background-color: #f2f2f2;
+  font-family: "Oswald";
+  font-weight: 600;
+}
+.register .register-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.register .contact-btn {
+  padding: 10px 30px;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.hero {
+  padding: 30px 0;
+}
+.hero h2 {
+  font-size: 55px;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 300;
+}
+
+.service-provision h2 {
+  font-family: "Oswald";
+  font-size: 60px;
+  line-height: 90px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 600;
+}
+
+.service-provision ul li {
+  list-style: none;
+  font-size: 20px;
+  letter-spacing: 0px;
+  line-height: 35px;
+  color: #707070;
+  font-weight: 300;
+  font-family: "Oswald";
+}
+
+.benefits {
+  background-color: #68a5f8;
+}
+.benefits-heading {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 60px;
+  line-height: 90px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 600;
+  font-family: "Oswald";
+}
+
+.benefits .key-benefits {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.benefits .key-benefits .benefit-content {
+  max-width: 350px;
+  padding: 40px 0;
+}
+.benefit-content h3 {
+  font-size: 35px;
+  letter-spacing: 1px;
+  line-height: 46px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Oswald";
+}
+.benefit-content p {
+  font-size: 20px;
+  line-height: 35px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Oswald";
+}
+
+.slider .carousel-item h2 {
+  font-size: 60px;
+  line-height: 90px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 500;
+  font-family: "Oswald";
+  padding-bottom: 20px;
+}
+
+.slider .carousel-item p {
+  margin-top: 10px;
+  font-size: 28px;
+  letter-spacing: 1px;
+  line-height: 45px;
+  color: #707070;
+  font-weight: 300;
+  font-family: "Oswald";
+}
+.slider .carousel-indicators {
+  bottom: -30px;
+}
+.slider .carousel-indicators button {
+  background-color: #000;
+}
+.carousel-content {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.slide-btn {
+  margin-top: 20%;
+}
+.slider i {
+  color: black;
+}
+.slider .slide-btn:hover {
+  background-color: white;
+}
+
+.footer-banner {
+  background-color: #263c88;
+  color: white;
+  text-align: center;
+}
+.session h3 {
+  font-size: 28px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Oswald";
+}
+.session h2 {
+  font-size: 45px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Oswald";
+}
+
+.line {
+  margin: 50px 0;
+  padding: 2px;
+  background-color: #31468e;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+.footer-content p {
+  font-size: 15px;
+  line-height: 20px;
+}
+.footer-content .blog-list {
+  width: 400px;
+}
+.footer-content .link-list ul li {
+  list-style: none;
+  line-height: 36px;
+  color: #161d35;
+  font-weight: 300;
+  font-size: 16px;
+}
+.footer-content .link-list ul li i {
+  padding-right: 10px;
+}
+.footer-content .link-list h3,
+.footer-content .blog-list h3 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+/* Life Coaching Certification CSS */
+
+.section3-heading {
+  max-width: 859px;
+  margin: 30px auto;
+}
+.section3-heading h2 {
+  font-size: 60px;
+  line-height: 90px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Oswald";
+}
+
+.section3-heading p {
+  font-size: 20px;
+  line-height: 35px;
+  color: #666666;
+  font-weight: 300;
+  font-family: "Oswald";
+}
+
+.section3 .icon {
+  background-color: #f2f2f2;
+  border: none;
+}
+.section3 .card h4 {
+  max-width: 250px;
+  margin: 25px auto;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Oswald";
+}
+.section3 .card .card-btn {
+  margin-bottom: 20px;
+  background-color: #428ef7;
+  color: white;
+  text-transform: uppercase;
+  padding: 12px 25px;
+}
+.section3 .card .card-btn:hover {
+  background-color: #4179c8;
+  transition: 0.3s;
+}
+.section3 .icon img {
+  transition: 0.3s ease-in-out;
+  transform: scale(0.9);
+}
+.section3 .icon:hover img {
+  transform: scale(1.1);
+}
+.section3 .card .card-heading-1 {
+  padding: 25px 0;
+}
+.section3 .card .card-heading-2 {
+  padding: 13px 0;
+}
+
+.section4 {
+  padding: 40px 0;
+}
+
+.section4 .signup-form {
+  background-color: #f2f2f2;
+  margin-top: 40px;
+}
+.section4 .signup-form-content {
+  padding: 25px 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.section4 .signup-form-content input,
+.section4 .contact-form-content input,
+.contact-form-content textarea {
+  margin-bottom: 15px;
+  border: none;
+}
+.section4 .signup-form-content h3,
+.section4 .contact-form-content h3 {
+  font-size: 35px;
+  line-height: 90px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Oswald";
+  text-align: center;
+}
+.section4 .contact-form-content h3 {
+  color: #fff;
+}
+
+.section4 .contact-form {
+  background-color: #428ef7;
+}
+.section4 .form-1 {
+  padding-right: 0;
+}
+.section4 .form-2 {
+  padding-left: 0;
+}
+.section4 .contact-form-content {
+  padding: 45px 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.section5 {
+  background-image: url(images/Shape\ 42.png);
+  padding: 50px 0;
+  color: #fff;
+}
+.section5 h2,
+.section6 h2 {
+  font-size: 60px;
+  line-height: 90px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Oswald";
+}
+.section5 ul {
+  list-style: circle;
+}
+.section5 ul li {
+  padding-bottom: 15px;
+  font-size: 20px;
+  line-height: 35px;
+  color: #ffffff;
+  font-weight: 200;
+  font-family: "Oswald";
+}
+.section6 {
+  padding: 50px 0;
+}
+.section6 .card {
+  border: none;
+}
+.section6 .card-body {
+  padding: 2rem 1rem 2rem 0;
+}
+.section6 .card h5 {
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 600;
+  font-family: "Oswald";
+}
+
+.section6 .card p {
+  font-size: 18px;
+  line-height: 35px;
+  color: #666666;
+  font-weight: 300;
+  font-family: "Oswald";
+}
+
+.section7 {
+  background-color: #cacbcc;
+}
+.section7 .slider p {
+  font-size: 22px;
+  letter-spacing: 1px;
+  line-height: 45px;
+  color: #0e0e0e;
+  font-weight: 400;
+  font-family: "Lato";
+}
+.section7 .slider .dave-hollenbek {
+  font-size: 18px;
+  color: #3e3e3e;
+}
+
+/* STORE page CSS  */
+.shop-items {
+  padding: 40px 0;
+}
+.shop-items .item-description h2 {
+  font-size: 40px;
+  letter-spacing: 1px;
+  line-height: 50px;
+  font-weight: 500;
+  font-family: "Oswald";
+}
+.shop-items .item-description p,
+.shop-items .item-description ul li {
+  font-size: 18px;
+  line-height: 35px;
+  font-family: "Oswald";
+  font-weight: 300;
+  color: #000000;
+}
+.shop-items .item-description ul li {
+  font-size: 16px;
+  line-height: 42px;
+  color: #666666;
+}
+.shop-items .item-description ul {
+  padding-left: 20px;
+  list-style: circle;
+}
+.shop-items .order {
+  padding-bottom: 30px;
+}
+.shop-items .order .order-btn {
+  background-color: #428ef7;
+  font-family: "Oswald";
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding: 15px 30px;
+  border-radius: 0;
+}
+.shop-items .order .price-tag {
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 42px;
+  color: #000000;
+  font-weight: 200;
+  font-family: "Oswald";
+}
+.shop-items .order .price-tag span {
+  color: #ed3833;
+  font-weight: 500;
+}
+.shop-items .order-item {
+  display: flex;
+  justify-content: space-evenly;
+}
+.item-background {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1400px) {
+  .header .tommy {
+    font-size: 20px;
+  }
+  .header .nav-list {
+    padding-left: 5px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header .tommy {
+    font-size: 16px;
+  }
+  .header .nav-list {
+    padding-left: 3px;
+    font-size: 10px;
+  }
+
+  .banner .certification-heading h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    padding: 0 30px;
+  }
+  .header .navlogo {
+    top: -20px;
+    max-width: 150px;
+  }
+  .header .tommy {
+    font-size: 15px;
+  }
+  .header .nav-list {
+    padding-left: 4px;
+    font-size: 10px;
+  }
+
+  .banner .certification-heading h1 {
+    font-size: 25px;
+  }
+  .banner h1 {
+    font-size: 50px;
+  }
+
+  .section4 .signup-form-content,
+  .section4 .contact-form-content {
+    max-width: 300px;
+  }
+
+  .section6 .card h5 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .section6 .card p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .shop-items .item-description h2 {
+    font-size: 38px;
+  }
+  .shop-items .item-description p {
+    line-height: 30px;
+  }
+  .shop-items .item-description ul li {
+    line-height: 32px;
+  }
+  .shop-items .order-item {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 20px 15px;
+  }
+  .header .navlogo {
+    top: 0;
+    z-index: 1;
+    max-width: 150px;
+  }
+
+  .banner h1 {
+    font-size: 35px;
+  }
+
+  .banner .certification-heading h1 {
+    font-size: 18px;
+  }
+
+  .register {
+    margin-bottom: 0;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+  .hero p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .service-provision h2 {
+    font-size: 50px;
+  }
+
+  .service-provision ul li {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .benefits-heading {
+    font-size: 45px;
+  }
+
+  .benefit-content h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .benefit-content p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .slider .carousel-item h2 {
+    font-size: 40px;
+  }
+
+  .slider .carousel-item p {
+    font-size: 18px;
+  }
+
+  .session h3 {
+    font-size: 18px;
+  }
+  .session h2 {
+    font-size: 30px;
+  }
+
+  .footer-content {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .footer-content p {
+    font-size: 13px;
+  }
+  .footer-content .blog-list {
+    padding-top: 20px;
+    width: 500px;
+  }
+  .footer-content .link-list ul li {
+    font-size: 13px;
+    line-height: 25px;
+  }
+  .footer-content .link-list h3,
+  .footer-content .blog-list h3 {
+    font-size: 15px;
+  }
+  .footer-logo {
+    max-width: 200px;
+  }
+
+  .section3 .card {
+    max-width: 500px;
+    margin: 10px auto;
+  }
+
+  .section3 .card h4 {
+    max-width: 250px;
+    margin: 25px auto;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Oswald";
+  }
+
+  .section4 .signup-form-content,
+  .section4 .contact-form-content {
+    max-width: 250px;
+  }
+
+  .section5 h2,
+  .section6 h2 {
+    text-align: center;
+  }
+  .section5 ul {
+    list-style: circle;
+  }
+  .section5 ul li {
+    padding-bottom: 15px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .section3-heading h2,
+  .section5 h2,
+  .section6 h2 {
+    font-size: 50px;
+  }
+
+  .section6 .card {
+    max-width: 400px;
+    margin: 10px auto;
+  }
+
+  .shop-items .order-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .shop-items .nebraska {
+    display: flex;
+    align-items: center;
+  }
+
+  .shop-items .item-description h2 {
+    font-size: 35px;
+  }
+  .shop-items .item-description p {
+    line-height: 25px;
+    font-size: 16px;
+  }
+  .shop-items .item-description ul li {
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section4 .form-1 {
+    padding-right: 12px;
+  }
+  .section4 .form-2 {
+    padding-left: 12px;
+  }
+
+  .section3-heading h2,
+  .section5 h2,
+  .section6 h2 {
+    font-size: 40px;
+  }
+  .section3-heading p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .shop-items .order-item {
+    display: flex;
+    flex-direction: row;
+  }
+  .shop-items .nebraska {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 479px) {
+  .wrapper {
+    padding: 0 15px;
+  }
+  .section3 {
+    padding: 20px 0;
+  }
+  .header .navlogo {
+    top: 0;
+    max-width: 100px;
+  }
+
+  .banner h1 {
+    font-size: 20px;
+  }
+
+  .banner .certification-heading h1 {
+    font-size: 11px;
+  }
+
+  .register {
+    background-color: #f2f2f2;
+    font-family: "Oswald";
+    font-weight: 600;
+  }
+  .register .register-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .register-content h2 {
+    font-size: 17px;
+  }
+  .register .signup-btn {
+    padding-top: 10px;
+  }
+
+  .hero h2,
+  .service-provision h2,
+  .benefits-heading {
+    font-size: 20px;
+    text-align: center;
+  }
+  .hero p,
+  .service-provision ul li {
+    font-size: 12px;
+  }
+
+  .benefits .key-benefits {
+    display: flex;
+    flex-direction: column;
+  }
+  .benefits .key-benefits .benefit-content {
+    max-width: 450px;
+  }
+  .benefit-content h3 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .benefit-content p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .slider .carousel-item h2 {
+    font-size: 25px;
+  }
+  .slider .carousel-item p {
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .slide-btn {
+    margin-top: 40%;
+  }
+
+  .session h3 {
+    font-size: 15px;
+  }
+  .session h2 {
+    font-size: 20px;
+  }
+
+  .footer-content .blog-list {
+    max-width: 370px;
+  }
+  .footer-content .link-list ul li i {
+    padding-right: 0;
+  }
+  .footer-logo img {
+    padding-bottom: 10px;
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section3-heading h2,
+  .section5 h2,
+  .section6 h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .section5 ul li {
+    font-size: 16px;
+  }
+
+  .shop-items .item-description h2 {
+    font-size: 32px;
+  }
+  .shop-items .item-description p {
+    line-height: 23px;
+    font-size: 15px;
+  }
+  .shop-items .item-description ul li {
+    line-height: 28px;
+  }
+  .shop-items .order .order-btn {
+    padding: 10px 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .shop-items .order .price-tag {
+    font-size: 20px;
+  }
+}
