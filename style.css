@@ -471,9 +471,12 @@ button:active {
 .footer-content .link-list ul li {
   list-style: none;
   line-height: 36px;
-  color: #161d35;
   font-weight: 300;
   font-size: 16px;
+}
+.footer-content .link-list ul li a {
+  text-decoration: none;
+  color: #161d35;
 }
 .footer-content .link-list ul li i {
   padding-right: 10px;
@@ -619,7 +622,7 @@ button:active {
   list-style: circle;
 }
 .section5 ul li {
-  padding-bottom: 15px;
+  padding-top: 15px;
   font-size: 20px;
   line-height: 35px;
   color: #ffffff;
@@ -729,6 +732,43 @@ button:active {
   padding: 50px 0;
 }
 
+/* Contact page CSS  */
+
+.get-in-touch .contact-page-form {
+  max-width: 550px;
+  padding-top: 100px;
+  padding-left: 50px;
+  font-family: "Oswald";
+}
+.get-in-touch .contact-page-form h1 {
+  font-size: 60px;
+  line-height: 90px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+.get-in-touch .contact-page-form input {
+  margin-bottom: 18px;
+}
+.get-in-touch .contact-page-form input[placeholder],
+.get-in-touch .contact-page-form textarea[placeholder] {
+  font-weight: 200;
+}
+.get-in-touch .contact-page-form textarea {
+  padding: 9px 13px;
+  height: 150px;
+}
+.get-in-touch .contact-page-form button {
+  margin-top: 20px;
+  background-color: #428ef7;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding: 0 30px;
+  border-radius: 0;
+}
+
 /* Media Query */
 
 @media screen and (max-width: 1400px) {
@@ -804,6 +844,20 @@ button:active {
   .shop-items .order-item {
     justify-content: space-between;
   }
+
+  .get-in-touch .contact-page-form {
+    max-width: 480px;
+    padding-top: 30px;
+  }
+  .get-in-touch .contact-page-form h1 {
+    font-size: 50px;
+  }
+  .get-in-touch .contact-page-form input {
+    margin-bottom: 15px;
+  }
+  .get-in-touch .contact-page-form textarea {
+    height: 100px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -826,6 +880,14 @@ button:active {
 
   .register {
     margin-bottom: 0;
+  }
+  .register .register-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .register-content h2 {
+    font-size: 16px;
+    padding-bottom: 5px;
   }
 
   .hero h2 {
@@ -925,7 +987,6 @@ button:active {
     list-style: circle;
   }
   .section5 ul li {
-    padding-bottom: 15px;
     font-size: 18px;
     line-height: 25px;
   }
@@ -959,6 +1020,26 @@ button:active {
   .shop-items .item-description ul li {
     line-height: 30px;
   }
+
+  .get-in-touch .contact-page-form {
+    max-width: 480px;
+    padding-top: 30px;
+    padding-left: 10px;
+  }
+  .get-in-touch .contact-page-form h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .get-in-touch .contact-page-form input {
+    margin-bottom: 10px;
+  }
+  .get-in-touch .contact-page-form textarea {
+    padding: 9px 13px;
+    height: 100px;
+  }
+  .get-in-touch img {
+    padding-top: 35px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -987,6 +1068,14 @@ button:active {
     display: flex;
     flex-direction: column;
   }
+
+  .get-in-touch .contact-page-form {
+    max-width: 550px;
+    padding-right: 10px;
+  }
+  .get-in-touch img {
+    display: none;
+  }
 }
 @media screen and (max-width: 479px) {
   .wrapper {
@@ -1013,12 +1102,9 @@ button:active {
     font-family: "Oswald";
     font-weight: 600;
   }
-  .register .register-content {
-    display: flex;
-    flex-direction: column;
-  }
+
   .register-content h2 {
-    font-size: 17px;
+    font-size: 16px;
   }
   .register .signup-btn {
     padding-top: 10px;
