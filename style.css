@@ -2,46 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Lugrasimo&family=Lumanosimo&family=Oswald:wght@300&family=Poppins:wght@200;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Lugrasimo&family=Lumanosimo&family=Oswald:wght@300;500&family=Poppins:wght@200;600&display=swap");
 
-@font-face {
-  font-family: "Montserrat";
-  src: url("fonts/Montserrat-Bold.woff2") format("woff2"),
-    url("fonts/Montserrat-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("fonts/Montserrat-Medium.woff2") format("woff2"),
-    url("fonts/Montserrat-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("fonts/Montserrat-SemiBold.woff2") format("woff2"),
-    url("fonts/Montserrat-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("fonts/Montserrat-Regular.woff2") format("woff2"),
-    url("fonts/Montserrat-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("fonts/Montserrat-Light.woff2") format("woff2"),
-    url("fonts/Montserrat-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -237,11 +197,18 @@ button:active {
   padding: 0 50px;
   max-width: 1200px; /*1200px*/
 }
+.wrapper2 {
+  margin: 0 auto;
+  max-width: 1500px;
+}
 .contact-btn {
   background-color: #ec963c !important;
-  font-size: 15px;
+  font-size: 14px;
   padding: 10px 25px;
   border-radius: 0px !important;
+  color: #fff !important;
+  font-family: "Oswald";
+  font-weight: 100;
 }
 .header .nav-1 {
   background-color: #263c88;
@@ -255,8 +222,8 @@ button:active {
 .header .nav-2 .nav-list a::after {
   content: "";
   position: absolute;
-  bottom: -5px;
-  height: 2px;
+  bottom: -3px;
+  height: 3px;
   width: 100%;
   left: 0;
   background-color: #ec963c;
@@ -277,7 +244,9 @@ button:active {
   letter-spacing: 8px;
   font-weight: bold;
 }
-.header .tommy span {
+.header .tommy span,
+.meet-tommy h2 .orange,
+.meet-tommy p span {
   color: #e19a00;
 }
 .header .nav-list {
@@ -289,15 +258,34 @@ button:active {
 
 .banner h1 {
   font-size: 60px;
-  line-height: 90px;
   text-transform: uppercase;
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 700;
+  font-family: "Oswald";
 }
 .banner .certification-heading h1 {
   font-size: 45px;
 }
 
+.home-banner img {
+  height: 400px;
+}
+.home-banner h1 {
+  font-size: 50px;
+}
+.home-banner .happiness {
+  margin-top: 20px;
+  background-color: #428ef7;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding: 0 30px;
+  border-radius: 0;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .register {
   padding: 30px 0;
   margin-bottom: 50px;
@@ -769,6 +757,83 @@ button:active {
   border-radius: 0;
 }
 
+/* Index Page CSS  */
+
+.sunshine-img {
+  background-image: url(./images/sunshine.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 130px 80px;
+}
+.peoples-img {
+  background-image: url(./images/peoples.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 130px 80px;
+}
+.index-hero-content h3 {
+  font-size: 30px;
+  font-family: "Oswald";
+}
+.index-hero-content p {
+  font-size: 16px;
+  font-family: "Oswald";
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.meet-tommy {
+  padding: 50px 0;
+}
+.meet-tommy h2,
+.certificate-description h2 {
+  font-size: 50px;
+  font-family: "Oswald";
+}
+.meet-tommy .blue {
+  color: #263c88;
+}
+.meet-tommy p {
+  font-size: 20px;
+  font-family: "Oswald";
+  font-weight: 200;
+  line-height: 30px;
+}
+.meet-tommy .column-2 {
+  padding-left: 30px;
+}
+
+.get-your-certy {
+  background-image: url(./images/transformation.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+.video-img {
+  height: 400px;
+  width: 100%;
+}
+.certificate-description {
+  padding: 25px 40px;
+  color: white;
+}
+.certificate-description h5 {
+  font-size: 20px;
+  font-family: "Oswald";
+  font-weight: 100;
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+.certificate-description .star-img {
+  padding-left: 40px;
+}
+.certificate-description h6 {
+  font-size: 20px;
+  font-family: "Oswald";
+  font-weight: 100;
+  padding-left: 60px;
+}
+
 /* Media Query */
 
 @media screen and (max-width: 1400px) {
@@ -791,6 +856,12 @@ button:active {
 
   .banner .certification-heading h1 {
     font-size: 35px;
+  }
+  .home-banner h1 {
+    font-size: 40px;
+  }
+  .home-banner .happiness {
+    top: 70%;
   }
 }
 
@@ -815,6 +886,9 @@ button:active {
   }
   .banner h1 {
     font-size: 50px;
+  }
+  .home-banner h1 {
+    font-size: 30px;
   }
 
   .section4 .signup-form-content,
@@ -869,13 +943,22 @@ button:active {
     z-index: 1;
     max-width: 150px;
   }
-
+  .home-banner img {
+    height: 250px;
+  }
   .banner h1 {
     font-size: 35px;
   }
-
+  .home-banner h1 {
+    font-size: 25px;
+  }
   .banner .certification-heading h1 {
     font-size: 18px;
+  }
+  .home-banner .happiness {
+    top: 70%;
+    font-size: 12px;
+    letter-spacing: 0;
   }
 
   .register {
@@ -1040,6 +1123,30 @@ button:active {
   .get-in-touch img {
     padding-top: 35px;
   }
+
+  .meet-tommy h2 {
+    font-size: 35px;
+  }
+  .meet-tommy p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .get-your-certy {
+    height: 350px;
+  }
+  .video-img {
+    height: 350px;
+  }
+  .certificate-description h2 {
+    font-size: 40px;
+  }
+  .certificate-description h5 {
+    font-size: 16px;
+  }
+  .certificate-description h6 {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1060,6 +1167,9 @@ button:active {
     line-height: 25px;
   }
 
+  .shop-items .order {
+    padding-bottom: 0;
+  }
   .shop-items .order-item {
     display: flex;
     flex-direction: row;
@@ -1076,6 +1186,10 @@ button:active {
   .get-in-touch img {
     display: none;
   }
+
+  .meet-tommy .column-2 {
+    padding-left: 12px;
+  }
 }
 @media screen and (max-width: 479px) {
   .wrapper {
@@ -1088,28 +1202,24 @@ button:active {
     top: 0;
     max-width: 100px;
   }
-
   .banner h1 {
     font-size: 20px;
   }
-
   .banner .certification-heading h1 {
     font-size: 11px;
   }
-
   .register {
     background-color: #f2f2f2;
     font-family: "Oswald";
     font-weight: 600;
+    padding: 30px 0;
   }
-
   .register-content h2 {
     font-size: 16px;
   }
   .register .signup-btn {
     padding-top: 10px;
   }
-
   .hero h2,
   .service-provision h2,
   .benefits-heading {
