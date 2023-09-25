@@ -224,15 +224,14 @@ button:active {
   position: absolute;
   bottom: -3px;
   height: 3px;
-  width: 100%;
+  width: 0;
   left: 0;
   background-color: #ec963c;
-  transition: 0.3s;
+  transition: 0.4s;
   transition-timing-function: ease-in-out;
-  transform: scaleX(0);
 }
 .header .nav-2 .nav-list a:hover::after {
-  transform: scaleX(1);
+  width: 100%;
 }
 .header .navlogo {
   top: -40px;
@@ -834,6 +833,58 @@ button:active {
   padding-left: 60px;
 }
 
+/* Blog Page CSS  */
+
+.blog-content {
+  position: relative;
+}
+.blog-content .card-right {
+  position: absolute;
+  top: 50%;
+  left: 73%;
+  width: 55%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.blog-content .card-left {
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  width: 55%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.blog-content .card h6 {
+  font-size: 16px;
+  line-height: 45px;
+  color: #418df5;
+  font-family: "Oswald";
+}
+.blog-content .card h3 {
+  font-size: 32px;
+  letter-spacing: 1px;
+  line-height: 45px;
+  color: #000000;
+  font-weight: 500;
+  font-family: "Oswald";
+}
+.blog-content .card p {
+  font-size: 20px;
+  line-height: 35px;
+  color: #666666;
+  font-weight: 300;
+  font-family: "Oswald";
+}
+.blog-content .card .read-more {
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #428ef7;
+  font-weight: 700;
+  font-family: "Oswald";
+}
+
 /* Media Query */
 
 @media screen and (max-width: 1400px) {
@@ -1147,6 +1198,30 @@ button:active {
   .certificate-description h6 {
     font-size: 14px;
   }
+  .sunshine-img,
+  .peoples-img {
+    padding: 80px 20px;
+  }
+
+  .blog-content .blog-img img {
+    max-width: 400px;
+  }
+  .blog-content .card h6 {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .blog-content .card h3 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 29px;
+  }
+  .blog-content .card p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .blog-content .card .read-more {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1189,6 +1264,19 @@ button:active {
 
   .meet-tommy .column-2 {
     padding-left: 12px;
+  }
+
+  .blog-content .blog-img img {
+    max-width: 100%;
+  }
+  .blog-content .blog-img .blog-margin {
+    margin-top: 90px;
+  }
+  .blog-content .card {
+    z-index: 1;
+    top: 90%;
+    left: 50%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 479px) {
@@ -1309,5 +1397,27 @@ button:active {
   }
   .shop-items .order .price-tag {
     font-size: 20px;
+  }
+
+  .blog-content .card {
+    width: 90%;
+  }
+  .blog-content .card h6 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .blog-content .card h3 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .blog-content .card p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .blog-content .card .read-more {
+    font-size: 14px;
+  }
+  .blog-content .blog-img img {
+    margin-bottom: 55px;
   }
 }
